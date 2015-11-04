@@ -1,0 +1,9 @@
+{"namespace": "storm.cookbook",
+ "type": "record",
+ "name": "Document",
+ "fields": [
+     {"name": "docid", "type": "string"},
+     {"name": "time",  "type": "long"},
+     {"name": "line", "type": "string"}
+ ]
+}

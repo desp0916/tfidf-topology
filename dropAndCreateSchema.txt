@@ -1,0 +1,18 @@
+drop keyspace storm;
+create keyspace storm
+    with strategy_options = [{replication_factor:1}]
+    and placement_strategy = 'org.apache.cassandra.locator.SimpleStrategy';
+
+use storm;
+create column family tfidf
+    with comparator = AsciiType
+    and default_validation_class = 'UTF8Type'
+    and key_validation_class = 'UTF8Type';
+    
+use storm;
+create column family tfidfbatch
+    with comparator = AsciiType
+    and default_validation_class = 'UTF8Type'
+    and key_validation_class = 'UTF8Type';
+    
+
