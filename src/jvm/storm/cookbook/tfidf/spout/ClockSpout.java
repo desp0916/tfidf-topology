@@ -76,6 +76,7 @@ public abstract class ClockSpout implements IBatchSpout {
 	 * Marked final to emphasize to subclasses that there is no point in
 	 * implementing this (emitted tuples are not anchored).
 	 */
+	@Override
 	public final void ack(long batchId) {
 	}
 
